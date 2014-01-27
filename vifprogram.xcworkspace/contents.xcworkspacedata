@@ -15,6 +15,10 @@
    <Group
       location = "group:_posts"
       name = "_posts">
+      <FileRef
+         location = "group:_posts/2014-01-27-blogging-like-a-hacker.textile"
+         assignedFileDataType = "public.plain-text">
+      </FileRef>
    </Group>
    <Group
       location = "group:_layouts"
