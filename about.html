@@ -1,7 +1,11 @@
 ---
-title: About
 layout: post
 ---
 {% include blog-header.html %}
+{% for post in paginator.posts %}
+
+
 {{ content }}
+
+{% endfor %}
 {% include blog-footer.html %}
