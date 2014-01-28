@@ -1,8 +1,20 @@
 ---
 layout: post
 ---
- <h1>{{ page.title }}</h1>
-    <p class="muted">{{ page.date | date_to_long_string }}</p>
+{% include blog-header.html %}
 
-    {{ content }}
-  </div>
+
+<div class="span4 blog_item opacity">
+                        <div class="blog_description">
+                            <a class="title" href="javascript:void(0);" alt="">{{ page.title }}</a>
+                            <div class="post_date">{{ page.date | %d %b }}</div>
+                            <div class="blog_author">
+                                <span>by:
+                                    <a href="javascript:void(0);" alt="">John Smith</a>
+                                </span>
+                            </div>
+                            <div class="post_content">Nulla nec diam ut nunc convallis vehicula. Curabitur eget auctor nulla, eget malesuada orci. Vivamus gravida blandit porta.</div>
+                            <a class="post_readmore" href="javascript:void(0);" alt="">Read More</a>
+                        </div>
+                    </div>
+{% include blog-footer.html %}
